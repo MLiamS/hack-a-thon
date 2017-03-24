@@ -1,0 +1,14 @@
+
+<h1>Member list!</h1>
+
+#if ($membersInTeam)
+  <ul>
+    #foreach ($member in $membersInTeam)
+      <li><a href="/teams/team.getId()/teams/$team.getId()">$team.getName()</a></li>
+    #end
+  </ul>
+#else
+  <p>No Members!</p>
+#end
+
+<a href="/teams/team.getId()/members/new">Add New member</a>

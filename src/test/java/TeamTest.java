@@ -25,15 +25,9 @@ public class TeamTest {
     assertEquals(true, Team.all().contains(firstTeam));
     assertEquals(true, Team.all().contains(secondTeam));
   }
-  @Test
-  public void clear_emptiesAllCategoriesFromList_0() {
-    Team testTeam = new Team("ATeam");
-    Team.clear();
-    assertEquals(Team.all().size(), 0);
-  }
 
   @Test
-  public void getId_categoriesInstantiateWithAnId_1() {
+  public void getId_teamsInstantiateWithAnId_1() {
     Team testTeam = new Team("ATeam");
     assertEquals(1, testTeam.getId());
   }

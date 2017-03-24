@@ -2,7 +2,6 @@
 <h1>$team.getName() members:</h1>
 
 #if (($team.getMembers().size()) > 0)
-<h2>Teams:</h2>
 <ul>
   #foreach($member in $team.getMembers())
    <li>$member.getName()</li>

@@ -1,8 +1,11 @@
 
 <h1>Hack-aThon</h1>
+<p>
+  This is a site that will create teams for the local Ruby Lunch.  You can populate teams with members.  The local meet up for Ruby Lunch is <a href=http://calagator.org/events/1250471366>here</a>.
+</p>
 
   #if ($teams.size() > 0)
-  <h2>Teams:</h2>
+  <h2>Click a team below to add/view its members</h2>
   #foreach ($team in $teams)
     <ul>
     <li><a href="/teams/$team.getId()">$team.getName()</a></li>

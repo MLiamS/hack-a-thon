@@ -1,12 +1,18 @@
 
 <h1>$team.getName() members:</h1>
 
+#if (($team.getMembers().size()) > 0)
+<h2>Teams:</h2>
 <ul>
   #foreach($member in $team.getMembers())
-   <li><a href="/teams/$team.getId()/members/$member.getId()">$member.getName()</a></li>
+   <li>$member.getName()</li>
   #end
 </ul>
+#else
+  <h2>This team needs members!</h2>
+#end
 
-<a href="/teams/$team.getId()/members/new">Add a new member to this team</a>
-<a href="/teams/new">Add another new Team</a>
-<a href="/teams">All Teams</a>
+
+<a href="/teams/$team.getId()/members/new">Add a member to this team</a>
+<a href="/teams/new">Create new Team</a>
+<a href="/">Home</a>

@@ -2,16 +2,17 @@
 
 #### _hack-a-thon, 03-24-2017_
 
-#### By _**[A[A[A[A[A and **_
+#### By _**Liam Stabeno**_
 
 ## Description
-_Example text for the description of the project_
+A webpage that will help people make specific separate teams, which then can be populated with individual team members.
 
 
 ## Specifications
-
-| Behavior                   | Input Example     | Output Example    |
-| -------------------------- | -----------------:| -----------------:|
+|Behavior|Input|Output|
+|---|:---:|:---:|
+|User can create a team by name |"A Team"|A Team|
+|User can click a team in order to add a new team member by name| "Member 1"|Member 1|
 
 
 
@@ -21,9 +22,13 @@ _Example text for the description of the project_
 * _Run the command 'gradle run'_
 * _Open browser and go to localhost:4567_
 
+## Technologies Used
+
+* Java
+* Java libraries
 
 ### License
 
-Copyright (c) 2017 **_[A[A[A[A[A and _**
+Copyright (c) 2017 **_Liam Stabeno_**
 
 This software is licensed under the MIT license.
